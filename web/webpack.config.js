@@ -20,10 +20,14 @@ module.exports = {
       },
 
 
-      // CSS 
+      // SCSS/CSS 
       {
-        test:/\.css$/,
-        use:['style-loader','css-loader']
+        test:/\.(s*)css$/,
+        use:[
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+        ],
       }
 
     ],
